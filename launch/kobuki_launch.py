@@ -10,6 +10,7 @@ def generate_launch_description():
             output='screen',
             parameters=[
                 {'device_port': '/dev/ttyUSB0'},
+                {'base_frame': 'base'},
             ],
             remappings=[
                 ('commands/velocity', 'cmd_vel'),
