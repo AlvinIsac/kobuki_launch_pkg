@@ -11,7 +11,8 @@
 
   <depend>rclcpp</depend>
   <depend>kobuki_node</depend>
-
+  <depend>urg_node</depend>
+  
   <export>
     <build_type>ament_cmake</build_type>
   </export>
