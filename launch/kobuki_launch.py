@@ -32,11 +32,11 @@ def generate_launch_description():
         ]
     )
 
-        urg_node_driver = launch_ros.actions.Node(
-            package='urg_node',
-            executable='urg_node_driver',
-            output='screen',
-            arguments=['--ros-args', '-p', 'serial_port:=/dev/ttyACMO']
+    urg_node_driver = launch_ros.actions.Node(
+        package='urg_node',
+        executable='urg_node_driver',
+        output='screen',
+        arguments=['--ros-args', '-p', 'serial_port:=/dev/ttyACM0']
     )
 
     return launch.LaunchDescription([kobuki_ros_node, urg_node_driver])
